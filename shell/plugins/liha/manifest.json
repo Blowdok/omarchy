@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "id": "blowvizion.liha",
+  "name": "LIHA",
+  "version": "0.1.0",
+  "author": "BlowVizion",
+  "license": "MIT",
+  "description": "Assistant conversationnel personnel, texte et voix locale",
+  "kinds": ["panel", "bar-widget"],
+  "keepLoaded": true,
+  "entryPoints": {
+    "panel": "Panel.qml",
+    "barWidget": "Widget.qml"
+  },
+  "barWidget": {
+    "displayName": "LIHA",
+    "description": "Ouvrir LIHA ; clic droit pour les applications",
+    "category": "Assistant",
+    "defaultSection": "left",
+    "allowMultiple": false
+  }
+}

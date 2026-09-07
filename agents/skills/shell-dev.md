@@ -45,3 +45,7 @@ unicode characters. Agent file-editing tools can strip multi-byte codepoints
 in some positions — do **not** rewrite widget files wholesale through those
 tools. For glyph fixes, make a targeted edit with the surrounding context, or
 use a Python script that inserts codepoints via `chr(0xXXXXX)`.
+
+## Vérification Qt depuis Windows
+
+Un harnais PySide6 peut charger les composants `Ui` et `Commons` réels avec des doublures temporaires de Quickshell pour contrôler la géométrie et les interactions. Il ne valide ni IPC native ni Wayland et ne remplace pas les essais dans Omarchy. Dans un `RowLayout`, préférer `implicitWidth` et `implicitHeight` ; un double de `FloatingWindow` doit définir `transientParent: null`, et le harnais Python doit garder ses références aux fenêtres pour éviter leur destruction prématurée. Exemple reproductible : `test/shell.d/fixtures/liha/`.

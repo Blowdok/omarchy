@@ -1,0 +1,4 @@
+# À installer uniquement dans l'environnement virtuel LIHA.
+# Sous Linux, sounddevice utilise le paquet système portaudio.
+vosk==0.3.45
+sounddevice==0.5.6

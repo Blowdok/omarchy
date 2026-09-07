@@ -1,0 +1,6 @@
+#!/bin/bash
+
+# omarchy:summary=Ouvrir le panneau conversationnel LIHA
+
+set -euo pipefail
+omarchy-shell shell toggle blowvizion.liha

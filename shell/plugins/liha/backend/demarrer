@@ -1,0 +1,10 @@
+#!/bin/bash
+
+set -euo pipefail
+dossier="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" && pwd)"
+interpreteur="${XDG_DATA_HOME:-$HOME/.local/share}/liha/venv/bin/python"
+if [[ -x $interpreteur ]]; then
+  exec "$interpreteur" -u "$dossier/moteur.py"
+else
+  exec python3 -u "$dossier/moteur.py"
+fi

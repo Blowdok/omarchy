@@ -4,6 +4,22 @@ Omarchy is a beautiful, fun & agentic Linux distribution by DHH.
 
 Read more at [omarchy.org](https://omarchy.org).
 
+## Variante personnelle LIHA — version expérimentale 0.1.0
+
+Cette variante prépare le poste de travail personnel de Blowdok en ajoutant une extension LIHA au bureau Omarchy : conversation française, dictée et lecture locales, suivi des actions et modes approbation/accès complet. Le code combine QML/Quickshell et Python 3.11+, avec Codex ou Grok pour le raisonnement, Vosk pour la dictée et eSpeak NG pour la première voix gratuite.
+
+Le cadrage vise l’absence de coût supplémentaire, en conservant les abonnements IA existants et en recherchant des composants vocaux gratuits.
+
+Les premières actions concernent les fichiers du projet, les fenêtres Hyprland, le lancement d’applications et les commandes explicitement approuvées. Le contrôle graphique universel, Vivienne HD et une ISO personnalisée ne sont pas encore fournis. Les essais natifs sous Omarchy restent nécessaires avant installation sur le SSD cible.
+
+Sur une session Omarchy compatible avec le système d’extensions de cette branche, activer depuis le clone :
+
+```bash
+bash ./bin/omarchy-setup-liha --source "$PWD" --voix
+```
+
+Lire le [guide LIHA](shell/plugins/liha/README.md) pour les connexions, exemples pratiques, tests et limites ; la [vision](docs/regles/vision-variante-personnelle.md) conserve les besoins et le [plan](plans/liha-premiere-version.md) décrit la première version.
+
 ## The Omarchy Manual
 
 The manual lives in [`manual/`](manual/), which is its authoritative source. It's

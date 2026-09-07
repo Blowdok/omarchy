@@ -1,0 +1,100 @@
+#!/bin/bash
+
+# omarchy:summary=Activer LIHA et préparer sa voix française locale
+# omarchy:args=[--source dossier] [--voix]
+# omarchy:examples=omarchy setup liha | omarchy setup liha --source ~/Work/omarchy --voix
+
+set -euo pipefail
+source_liha="$OMARCHY_PATH"
+preparer_voix=false
+while (( $# > 0 )); do
+  case "$1" in
+    --source)
+      if (( $# < 2 )); then
+        echo "Il manque le dossier source." >&2
+        exit 1
+      fi
+      source_liha="$2"
+      shift 2
+      ;;
+    --voix) preparer_voix=true; shift ;;
+    -h|--help)
+      echo "Usage : omarchy setup liha [--source dossier] [--voix]"
+      exit 0
+      ;;
+    *) echo "Option inconnue : $1" >&2; exit 1 ;;
+  esac
+done
+
+source_liha="$(realpath -- "$source_liha")"
+extension="$source_liha/shell/plugins/liha"
+if [[ ! -f $extension/manifest.json || ! -f $extension/backend/moteur.py ]]; then
+  echo "La source choisie ne contient pas LIHA." >&2
+  exit 1
+fi
+
+# Le registre Omarchy cherche les extensions dans ce chemin précis.
+configuration="$HOME/.config"
+donnees="${XDG_DATA_HOME:-$HOME/.local/share}"
+cible="$configuration/omarchy/plugins/blowvizion.liha"
+mkdir -p -- "$configuration/omarchy/plugins" "$HOME/.local/bin" "$donnees/applications"
+
+extension_embarquee="$(realpath -- "$OMARCHY_PATH")/shell/plugins/liha"
+if [[ -f $extension_embarquee/manifest.json && $extension != "$extension_embarquee" ]]; then
+  echo "LIHA est déjà embarquée dans cette variante ; utilise sa source installée pour éviter deux extensions du même identifiant." >&2
+  exit 1
+fi
+if [[ -e $cible || -L $cible ]]; then
+  if [[ $(realpath -- "$cible") != "$extension" ]]; then
+    echo "Une autre installation LIHA existe : $cible. Elle a été conservée." >&2
+    exit 1
+  fi
+elif [[ $extension != "$extension_embarquee" ]]; then
+  ln -s -- "$extension" "$cible"
+fi
+
+# Le lanceur reste indépendant du chemin du clone et n'altère pas OMARCHY_PATH.
+lanceur="$HOME/.local/bin/omarchy-launch-liha"
+if [[ -e $lanceur ]] && ! cmp -s -- "$source_liha/bin/omarchy-launch-liha" "$lanceur"; then
+  cp -p -- "$lanceur" "$lanceur.sauvegarde-$(date +%s)"
+fi
+cp -- "$source_liha/bin/omarchy-launch-liha" "$lanceur"
+chmod +x -- "$lanceur"
+desktop="$donnees/applications/blowvizion-liha.desktop"
+if [[ -e $desktop ]]; then
+  cp -p -- "$desktop" "$desktop.sauvegarde-$(date +%s)"
+fi
+cat > "$desktop" <<'DESKTOP'
+[Desktop Entry]
+Type=Application
+Name=LIHA
+Comment=Discuter et agir avec ton assistante personnelle
+Exec=omarchy-launch-liha
+Icon=utilities-terminal
+Terminal=false
+Categories=Utility;Development;
+DESKTOP
+
+if [[ $preparer_voix == true ]]; then
+  omarchy-pkg-add python espeak-ng portaudio
+  python3 -m venv "$donnees/liha/venv"
+  "$donnees/liha/venv/bin/python" -m pip install -r "$extension/backend/requirements-voix.txt"
+  "$donnees/liha/venv/bin/python" "$extension/backend/preparer_voix.py"
+fi
+
+omarchy-shell shell rescanPlugins
+extension_connue=false
+for tentative in {1..20}; do
+  if omarchy-shell shell listPlugins | jq -e 'any(.[]; .id == "blowvizion.liha")' >/dev/null; then
+    extension_connue=true
+    break
+  fi
+  sleep 0.25
+done
+if [[ $extension_connue != true ]]; then
+  echo "Le bureau n'a pas encore chargé LIHA. Relance cette commande dans ta session Omarchy." >&2
+  exit 1
+fi
+omarchy-plugin-enable blowvizion.liha --section right
+echo "LIHA est activée. Ouvre-la depuis la barre ou le menu des applications."
+echo "Connecte ton abonnement avec codex login ou grok login dans un terminal."
