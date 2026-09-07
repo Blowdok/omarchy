@@ -50,3 +50,13 @@ python3 shell/plugins/liha/backend/tests/verifier_abonnement.py --fournisseur co
 ```
 
 Le [harnais Qt](../../test/shell.d/fixtures/liha/README.md) utilise un environnement Python temporaire avec PySide6. Il produit des captures et un rapport, sans ouvrir d’application utilisateur, contacter un fournisseur ni activer le microphone.
+
+## Adoption du nom BV-LIHA
+
+Le 7 septembre 2026, l’identité retenue par Blowdok a été appliquée à la présentation du dépôt, à la consigne LIHA et aux libellés principaux de session, démarrage et informations système. Les 19 tests fournisseurs ont été relancés : 17 réussis, 2 ignorés car spécifiques aux descendants POSIX. Le harnais du panneau Qt a été relancé avec succès ; accueil et approbation à taille minimale ont été inspectés avec la nouvelle présentation.
+
+Les contrôles JSON, INI et Bash des libellés système modifiés réussissent. Les assertions Node de la suite menu réussissent ; la suite complète s’arrête ensuite sur l’absence de `fc-query` sous Windows et n’est pas déclarée entièrement validée. Les clés et actions du menu restent celles du socle ; le nom visible de la variante n’altère pas son routage.
+
+Le bouton de menu BV a été rendu avec les vrais composants Qt et un transport simulé : clic gauche vers le menu et clic droit vers le terminal vérifiés. Les PNG principaux ont été inspectés, avec transparence et dimensions conservées ; deux générations donnent les mêmes empreintes. Le texte intégral de la licence MIT amont et sa notice de copyright ont été comparés à la version précédente et conservés.
+
+SDDM, Plymouth, Limine, la barre et l’écran système devront être vérifiés dans leur environnement Linux réel avant validation de l’image BV-LIHA. La préparation de la langue française, les illustrations des thèmes amont et les titres de fenêtres couplés à des règles restent recensés comme travaux distincts du changement de nom.

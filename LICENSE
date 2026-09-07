@@ -1,4 +1,5 @@
 Copyright (c) David Heinemeier Hansson
+Copyright (c) 2026 Blowdok, sous la marque BlowVizion, pour les modifications BV-LIHA
 
 Permission is hereby granted, free of charge, to any person obtaining
 a copy of this software and associated documentation files (the
@@ -18,3 +19,7 @@ NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE
 LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION
 OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
 WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+BV-LIHA est une œuvre dérivée d’Omarchy. L’attribution BlowVizion porte
+uniquement sur les ajouts et modifications propres à BV-LIHA ; les notices
+des auteurs du projet amont restent applicables à leurs contributions.

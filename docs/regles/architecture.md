@@ -1,8 +1,8 @@
-# Architecture projet
+# Architecture de BV-LIHA
 
 ## Vue d'ensemble
 
-La variante personnelle conserve Arch Linux, Hyprland et le bureau Quickshell d’Omarchy. LIHA 0.1.0 ajoute une extension utilisateur ou embarquée, sans nouvelle session graphique ni serveur réseau local.
+BV-LIHA (Linux Intelligent Hybride Autonome), sous la marque BlowVizion, conserve Arch Linux, Hyprland et le bureau Quickshell d’Omarchy. LIHA est son assistante intégrée : sa version 0.1.0 ajoute une extension utilisateur ou embarquée, sans nouvelle session graphique ni serveur réseau local.
 
 ## Principes
 
@@ -33,3 +33,4 @@ Toute décision structurante est consignée dans `docs\regles\decisions\` au for
 
 - [RAD 0002 — Extension conversationnelle LIHA](decisions/0002-liha-extension-conversationnelle.md).
 - [RAD 0003 — Français pour le système et LIHA](decisions/0003-francais-systeme-et-liha.md).
+- [RAD 0004 — Identité BV-LIHA](decisions/0004-identite-bv-liha.md).

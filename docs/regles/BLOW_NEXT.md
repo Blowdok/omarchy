@@ -1,10 +1,10 @@
-# Continuité du projet LIHA
+# Continuité du projet BV-LIHA
 
 Mise à jour : 2026-09-07. Lire ce fichier au début de chaque session.
 
 ## État actuel
 
-LIHA 0.1.0 est une extension expérimentale implémentée sur Omarchy quattro, version amont 4.0.0.alpha. Dépôt personnel : https://github.com/Blowdok/omarchy ; branche de travail : `liha-premiere-version`. L’origine amont reste https://github.com/omacom/omarchy.
+Le système s’appelle **BV-LIHA — Linux Intelligent Hybride Autonome**, sa marque est **BlowVizion** et **LIHA** reste l’assistante intégrée : choix explicite de Blowdok. La version expérimentale 0.1.0 repose sur Omarchy quattro, version amont 4.0.0.alpha. Dépôt personnel : https://github.com/Blowdok/omarchy ; branche de travail : `liha-premiere-version`. L’origine amont reste https://github.com/omacom/omarchy ; les noms techniques existants sont conservés pour compatibilité.
 
 Blowdok a demandé d’appliquer les recommandations et d’implémenter directement sans nouvelle question. L’objectif reste son poste de travail personnel, puis une distribution éventuelle. Aucune installation Linux ni modification des disques ou du démarrage Windows n’a été effectuée.
 
@@ -39,5 +39,6 @@ Matériel observé : Intel Core i3-10100, 16 Gio de mémoire, Radeon RX 570, dé
 - [Vision du poste personnel](vision-variante-personnelle.md).
 - [Plan de première version](../../plans/liha-premiere-version.md).
 - [Architecture](architecture.md) et [RAD 0002](decisions/0002-liha-extension-conversationnelle.md).
+- [RAD 0004 — Identité BV-LIHA](decisions/0004-identite-bv-liha.md), qui distingue renommage du produit et francisation du système.
 - [Vérification des licences](verification-licences-liha.md).
 - Ingestion effectuée par agent-memo dans la mémoire locale : projet `wiki/blowdok/projets/omarchy/projet.md`, décision `poste-personnel-et-gratuite.md` et session `wiki/liha/sessions/2026-09-07/22-46-omarchy-premiere-version.md`. Sources capturées, index vérifié ; aucune publication de la mémoire.

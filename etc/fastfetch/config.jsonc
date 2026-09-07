@@ -18,7 +18,7 @@
     "break",
     {
       "type": "custom",
-      "format": "\u001b[90m┌──────────────────────Hardware──────────────────────┐"
+      "format": "\u001b[90m┌──────────────────────Matériel──────────────────────┐"
     },
     {
       "type": "host",
@@ -65,13 +65,13 @@
     "break",
     {
       "type": "custom",
-      "format": "\u001b[90m┌──────────────────────Software──────────────────────┐"
+      "format": "\u001b[90m┌──────────────────────Logiciel──────────────────────┐"
     },
     {
       "type": "command",
-      "key": "\ue900 OS",
+      "key": "\ue900 Système",
       "keyColor": "blue",
-      "text": "version=$(omarchy-version) && echo \"Omarchy $version\""
+      "text": "version=$(omarchy-version) && echo \"BV-LIHA (base Omarchy $version)\""
     },
     {
       "type": "command",
@@ -97,7 +97,7 @@
     },
     {
       "type": "de",
-      "key": " DE",
+      "key": " Bureau",
       "keyColor": "blue"
     },
     {
@@ -133,22 +133,22 @@
     "break",
     {
       "type": "custom",
-      "format": "\u001b[90m┌────────────────Age / Uptime / Update───────────────┐"
+      "format": "\u001b[90m┌────────Ancienneté / Activité / Mise à jour─────────┐"
     },
     {
       "type": "command",
-      "key": "󱦟 OS Age",
+      "key": "󱦟 Ancienneté",
       "keyColor": "magenta",
-      "text": "echo $(( ($(date +%s) - $(stat -c %W /)) / 86400 )) days"
+      "text": "echo $(( ($(date +%s) - $(stat -c %W /)) / 86400 )) jours"
     },
     {
       "type": "uptime",
-      "key": "󱫐 Uptime",
+      "key": "󱫐 Durée d’activité",
       "keyColor": "magenta"
     },
     {
       "type": "command",
-      "key": " Update",
+      "key": " Mise à jour",
       "keyColor": "magenta",
       "text": "updated=$(omarchy-version-pkgs); echo \"$updated\""
     },

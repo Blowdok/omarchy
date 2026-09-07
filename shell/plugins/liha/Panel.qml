@@ -246,7 +246,7 @@ Item {
             Layout.fillWidth: true
             spacing: Style.space(3)
             Texte { text: "LIHA"; font.pixelSize: Style.font.display; font.bold: true }
-            Texte { text: "Ton assistant personnel dans Omarchy"; color: root.secondaire; font.pixelSize: Style.font.bodySmall }
+            Texte { text: "Ton assistante dans BV-LIHA · BlowVizion"; color: root.secondaire; font.pixelSize: Style.font.bodySmall }
           }
           Bouton {
             text: "Applications"

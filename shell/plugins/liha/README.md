@@ -1,10 +1,10 @@
 # LIHA 0.1.0
 
-Extension personnelle expérimentale du bureau Omarchy. Le panneau et son bouton de barre conservent les fonctions du bureau existant. Le clic droit du bouton ouvre les applications.
+LIHA est l’assistante intégrée à **BV-LIHA — Linux Intelligent Hybride Autonome**, système personnel de la marque **BlowVizion** fondé sur Omarchy. Le panneau et son bouton de barre conservent les fonctions du bureau existant. Le clic droit du bouton ouvre les applications.
 
 ## Première utilisation
 
-L’activation et les prérequis sont présentés dans le [README du dépôt](../../../README.md#variante-personnelle-liha--version-expérimentale-010). Le script `omarchy-setup-liha` exige une session Omarchy avec ses commandes système et son registre d’extensions Quickshell ; il n’installe pas un système Linux sur Windows.
+L’activation et les prérequis sont présentés dans le [README du dépôt](../../../README.md#bv-liha--version-expérimentale-010). Le script `omarchy-setup-liha` exige une session compatible Omarchy avec ses commandes système et son registre d’extensions Quickshell ; il n’installe pas un système Linux sur Windows.
 
 - Exécuter `codex login` ou `grok login` dans un terminal et connecter l’abonnement existant. Aucune clé API n’est nécessaire ; aucun repli facturé n’est implémenté. Codex nécessite les options récentes `--ignore-user-config`, `--ephemeral` et `--output-schema` ; le client 0.153.0 a servi à l’essai réel.
 - Ouvrir LIHA depuis la barre ou l’entrée LIHA dans les applications.

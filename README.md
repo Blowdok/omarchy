@@ -1,12 +1,12 @@
-# Omarchy
+# BV-LIHA
 
-Omarchy is a beautiful, fun & agentic Linux distribution by DHH.
+**Linux Intelligent Hybride Autonome**, le système personnel de la marque **BlowVizion**, avec **LIHA** comme assistante intégrée.
 
-Read more at [omarchy.org](https://omarchy.org).
+BV-LIHA est une variante indépendante fondée sur [Omarchy](https://omarchy.org), conçue d’abord pour le poste de travail de Blowdok.
 
-## Variante personnelle LIHA — version expérimentale 0.1.0
+## BV-LIHA — version expérimentale 0.1.0
 
-Cette variante prépare le poste de travail personnel de Blowdok en ajoutant une extension LIHA au bureau Omarchy : conversation française, dictée et lecture locales, suivi des actions et modes approbation/accès complet. Le code combine QML/Quickshell et Python 3.11+, avec Codex ou Grok pour le raisonnement, Vosk pour la dictée et eSpeak NG pour la première voix gratuite.
+BV-LIHA prépare le poste de travail personnel de Blowdok en ajoutant l’assistante LIHA au bureau issu d’Omarchy : conversation française, dictée et lecture locales, suivi des actions et modes approbation/accès complet. Le code combine QML/Quickshell et Python 3.11+, avec Codex ou Grok pour le raisonnement, Vosk pour la dictée et eSpeak NG pour la première voix gratuite.
 
 Le cadrage vise l’absence de coût supplémentaire, en conservant les abonnements IA existants et en recherchant des composants vocaux gratuits.
 
@@ -22,76 +22,78 @@ bash ./bin/omarchy-setup-liha --source "$PWD" --voix
 
 Lire le [guide LIHA](shell/plugins/liha/README.md) pour les connexions, exemples pratiques, tests et limites ; la [vision](docs/regles/vision-variante-personnelle.md) conserve les besoins et le [plan](plans/liha-premiere-version.md) décrit la première version.
 
-## The Omarchy Manual
+## Origine du projet
 
-The manual lives in [`manual/`](manual/), which is its authoritative source. It's
-mirrored to [learn.omacom.io](https://learn.omacom.io/2/the-omarchy-manual), where
-its screenshots are also hosted.
+BV-LIHA est une œuvre dérivée d’Omarchy, projet créé par David Heinemeier Hansson. Les notices amont et la licence MIT sont conservées ; les modifications BV-LIHA relèvent de Blowdok sous la marque BlowVizion. Le projet est indépendant et ne revendique aucun aval d’Omarchy ni de ses auteurs. L’[identité du produit](docs/regles/decisions/0004-identite-bv-liha.md) distingue le système, sa marque et son assistante.
 
-- [Welcome to Omarchy!](manual/01-welcome-to-omarchy.md)
+## Manuel du projet amont Omarchy
 
-**The Basics**
+Le manuel de référence amont est conservé dans [`manual/`](manual/) et publié sur [le site documentaire Omarchy](https://learn.omacom.io/2/the-omarchy-manual), avec ses captures. Il décrit le socle technique ; sa traduction et son adaptation à BV-LIHA restent à réaliser.
 
-- [Getting Started](manual/02-getting-started.md)
-- [Coming From Mac or Windows](manual/03-coming-from-mac-or-windows.md)
+- [Bienvenue dans Omarchy (projet amont)](manual/01-welcome-to-omarchy.md)
+
+**Les bases**
+
+- [Premiers pas](manual/02-getting-started.md)
+- [Passer de Mac ou Windows](manual/03-coming-from-mac-or-windows.md)
 - [Navigation](manual/04-navigation.md)
-- [The top bar](manual/05-the-top-bar.md)
-- [Themes](manual/06-themes.md)
-- [Hotkeys](manual/07-hotkeys.md)
-- [Unified Clipboard & History](manual/08-unified-clipboard-history.md)
-- [Reminders](manual/09-reminders.md)
-- [Notices](manual/10-notices.md)
-- [Text Extraction & Dictation](manual/11-text-extraction-dictation.md)
-- [Screenshots & Recording](manual/12-screenshots-recording.md)
-- [Toggles, idle & screensaver](manual/13-toggles-idle-screensaver.md)
-- [Omarchy CLI](manual/14-omarchy-cli.md)
+- [La barre supérieure](manual/05-the-top-bar.md)
+- [Thèmes](manual/06-themes.md)
+- [Raccourcis clavier](manual/07-hotkeys.md)
+- [Presse-papiers et historique unifiés](manual/08-unified-clipboard-history.md)
+- [Rappels](manual/09-reminders.md)
+- [Notifications](manual/10-notices.md)
+- [Extraction de texte et dictée](manual/11-text-extraction-dictation.md)
+- [Captures et enregistrement](manual/12-screenshots-recording.md)
+- [Options, inactivité et économiseur](manual/13-toggles-idle-screensaver.md)
+- [Commandes Omarchy](manual/14-omarchy-cli.md)
 
-**The Applications**
+**Les applications**
 
 - [Terminal](manual/15-terminal.md)
 - [Neovim](manual/16-neovim.md)
-- [AI](manual/17-ai.md)
-- [Development Tools](manual/18-development-tools.md)
-- [Shell Tools](manual/19-shell-tools.md)
-- [Shell Functions](manual/20-shell-functions.md)
-- [TUIs](manual/21-tuis.md)
-- [GUIs](manual/22-guis.md)
-- [Browsers](manual/23-browsers.md)
-- [Commercial apps/services](manual/24-commercial-apps-services.md)
-- [Web Apps](manual/25-web-apps.md)
-- [Gaming](manual/26-gaming.md)
-- [Filling out PDFs](manual/27-filling-out-pdfs.md)
-- [Windows VM](manual/28-windows-vm.md)
-- [Other Packages](manual/29-other-packages.md)
+- [Intelligence artificielle](manual/17-ai.md)
+- [Outils de développement](manual/18-development-tools.md)
+- [Outils du terminal](manual/19-shell-tools.md)
+- [Fonctions du terminal](manual/20-shell-functions.md)
+- [Interfaces dans le terminal](manual/21-tuis.md)
+- [Interfaces graphiques](manual/22-guis.md)
+- [Navigateurs](manual/23-browsers.md)
+- [Applications et services commerciaux](manual/24-commercial-apps-services.md)
+- [Applications web](manual/25-web-apps.md)
+- [Jeux](manual/26-gaming.md)
+- [Remplir des PDF](manual/27-filling-out-pdfs.md)
+- [Machine virtuelle Windows](manual/28-windows-vm.md)
+- [Autres paquets](manual/29-other-packages.md)
 
 **Configuration**
 
-- [Updates](manual/30-updates.md)
-- [Dotfiles](manual/31-dotfiles.md)
-- [Shell plugins](manual/32-shell-plugins.md)
-- [Monitors](manual/33-monitors.md)
-- [Keyboard, Mouse, Trackpad](manual/34-keyboard-mouse-trackpad.md)
-- [Networking](manual/35-networking.md)
-- [System sleep](manual/36-system-sleep.md)
-- [Hardware authentication](manual/37-hardware-authentication.md)
-- [Fonts](manual/38-fonts.md)
-- [Backgrounds](manual/39-backgrounds.md)
-- [Prompt](manual/40-prompt.md)
-- [Branding](manual/41-branding.md)
-- [Common tweaks](manual/42-common-tweaks.md)
-- [Making your own theme](manual/43-making-your-own-theme.md)
+- [Mises à jour](manual/30-updates.md)
+- [Fichiers de configuration](manual/31-dotfiles.md)
+- [Extensions du bureau](manual/32-shell-plugins.md)
+- [Écrans](manual/33-monitors.md)
+- [Clavier, souris et pavé tactile](manual/34-keyboard-mouse-trackpad.md)
+- [Réseau](manual/35-networking.md)
+- [Mise en veille](manual/36-system-sleep.md)
+- [Authentification matérielle](manual/37-hardware-authentication.md)
+- [Polices](manual/38-fonts.md)
+- [Fonds d’écran](manual/39-backgrounds.md)
+- [Invite de commandes](manual/40-prompt.md)
+- [Identité visuelle](manual/41-branding.md)
+- [Personnalisations courantes](manual/42-common-tweaks.md)
+- [Créer son thème](manual/43-making-your-own-theme.md)
 
-**The Rest**
+**Pour aller plus loin**
 
-- [Mac support](manual/44-mac-support.md)
-- [Troubleshooting](manual/45-troubleshooting.md)
+- [Compatibilité Mac](manual/44-mac-support.md)
+- [Dépannage](manual/45-troubleshooting.md)
 - [FAQ](manual/46-faq.md)
-- [System snapshots](manual/47-system-snapshots.md)
-- [Security](manual/48-security.md)
-- [Omarchy on...](manual/49-omarchy-on.md)
-- [Dual Boot Install](manual/50-dual-boot-install.md)
-- [Unattended Installs](manual/51-unattended-installs.md)
+- [Instantanés système](manual/47-system-snapshots.md)
+- [Sécurité](manual/48-security.md)
+- [Omarchy sur différents appareils](manual/49-omarchy-on.md)
+- [Installation en double démarrage](manual/50-dual-boot-install.md)
+- [Installations automatisées](manual/51-unattended-installs.md)
 
-## License
+## Licence
 
-Omarchy is released under the [MIT License](https://opensource.org/licenses/MIT).
+Le code du projet est distribué sous la [licence MIT](LICENSE), avec conservation des attributions amont.

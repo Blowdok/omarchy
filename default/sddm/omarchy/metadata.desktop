@@ -1,7 +1,7 @@
 [SddmGreeterTheme]
-Name=Omarchy
-Description=Minimal terminal-style login theme matching the Limine bootloader aesthetic
-Author=Omarchy
+Name=BV-LIHA
+Description=Thème de connexion minimal inspiré du terminal, assorti au démarrage Limine
+Author=BlowVizion (adaptation du thème Omarchy)
 Type=sddm-theme
 Version=1.0
 QtVersion=6

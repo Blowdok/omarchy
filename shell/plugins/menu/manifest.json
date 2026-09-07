@@ -1,10 +1,10 @@
 {
   "schemaVersion": 1,
   "id": "omarchy.menu",
-  "name": "Omarchy menu",
+  "name": "Menu BV-LIHA",
   "version": "1.0.0",
   "author": "Omarchy",
-  "description": "Quickshell-powered Omarchy command menu",
+  "description": "Menu des commandes BV-LIHA, propulsé par Quickshell",
   "kinds": [
     "menu",
     "bar-widget"
@@ -15,8 +15,8 @@
     "barWidget": "BarWidget.qml"
   },
   "barWidget": {
-    "displayName": "Omarchy menu",
-    "description": "Launches the Omarchy menu",
+    "displayName": "Menu BV-LIHA",
+    "description": "Ouvre le menu BV-LIHA",
     "category": "Compositor",
     "allowMultiple": false
   }

@@ -1,4 +1,4 @@
-# LIHA — première version expérimentale
+# BV-LIHA — première version expérimentale avec l’assistante LIHA
 
 ## Objectif
 

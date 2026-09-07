@@ -6,3 +6,4 @@
 - `openai-docs` — compétence consultée pour l’intégration Codex ; options confirmées dans le client installé et sources officielles. Les conclusions propres au projet sont conservées dans son architecture et son guide, sans modifier la compétence système partagée.
 - `ia-legol` et `maitre-ia` — utilisés par l’agent de vérification des licences pour borner le prototype personnel et les obligations avant distribution ; conclusions dans `verification-licences-liha.md`.
 - Compétences `memo-*` — utilisées exclusivement par agent-memo pour capturer les sources, compiler le projet, consigner la décision durable et vérifier l’index de la mémoire ; retours d’apprentissage conservés dans cette mémoire.
+- `renommage-marque` — appliquée à l’identité BV-LIHA et enrichie pour distinguer système, marque, assistante et socle technique ; ses scripts ne traduisent pas automatiquement. Utilisée par LIHA et l’agent d’identité, avec vérification de provenance par IA Legol et Maître IA.

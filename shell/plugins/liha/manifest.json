@@ -5,7 +5,7 @@
   "version": "0.1.0",
   "author": "BlowVizion",
   "license": "MIT",
-  "description": "Assistant conversationnel personnel, texte et voix locale",
+  "description": "Assistante intégrée à BV-LIHA, système BlowVizion : texte et voix locale",
   "kinds": ["panel", "bar-widget"],
   "keepLoaded": true,
   "entryPoints": {

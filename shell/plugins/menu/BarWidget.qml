@@ -12,8 +12,8 @@ BarWidget {
     id: button
     anchors.fill: parent
     bar: root.bar
-    text: "\ue900"
-    fontFamily: "omarchy"
+    text: "BV"
+    tooltipText: "Menu BV-LIHA · Clic droit : terminal"
     horizontalMargin: 7.5
     onPressed: function(button) {
       if (!root.bar) return

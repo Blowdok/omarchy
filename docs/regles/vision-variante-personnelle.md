@@ -1,9 +1,10 @@
-# Variante personnelle d’Omarchy : réflexion initiale
+# BV-LIHA : vision du système personnel
 
 Date : 2026-09-07. Phase : première version LIHA 0.1.0 implémentée, validation native Linux à effectuer. Dépôt personnel : Blowdok/omarchy, branche liha-premiere-version. Le [plan](../../plans/liha-premiere-version.md), l’[architecture](architecture.md) et le [rapport de vérification](verification-liha.md) décrivent le résultat concret.
 
 ## Intentions exprimées par Blowdok
 
+- Identité retenue : **BV-LIHA** pour le système, développé en **Linux Intelligent Hybride Autonome** ; **BlowVizion** comme marque ; **LIHA** comme assistante intégrée. Les propositions antérieures de noms ne sont pas retenues.
 - Le système entier doit être en français, y compris les réponses de LIHA : interface, installation, menus, messages, aide, dictée et synthèse. Exigence rappelée explicitement après livraison de la première version ; elle n’est pas satisfaite par la seule traduction du panneau LIHA.
 - Construire son poste de travail personnel idéal à partir d’Omarchy ; envisager une distribution à d’autres utilisateurs ultérieurement.
 - Suivre le cycle brainstorm, plan, développement, vérification, tests et validation ou corrections.
