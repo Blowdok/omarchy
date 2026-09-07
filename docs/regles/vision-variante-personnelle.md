@@ -4,6 +4,7 @@ Date : 2026-09-07. Phase : première version LIHA 0.1.0 implémentée, validatio
 
 ## Intentions exprimées par Blowdok
 
+- Le système entier doit être en français, y compris les réponses de LIHA : interface, installation, menus, messages, aide, dictée et synthèse. Exigence rappelée explicitement après livraison de la première version ; elle n’est pas satisfaite par la seule traduction du panneau LIHA.
 - Construire son poste de travail personnel idéal à partir d’Omarchy ; envisager une distribution à d’autres utilisateurs ultérieurement.
 - Suivre le cycle brainstorm, plan, développement, vérification, tests et validation ou corrections.
 - Intégrer une IA capable d’agir dans tout l’environnement ; le périmètre concret et les capacités devront être établis par des essais, sans promettre une capacité universelle.

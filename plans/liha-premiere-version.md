@@ -16,6 +16,7 @@ Ajouter une assistante personnelle à Omarchy sans remplacer son bureau : conver
 
 ## Critères de vérification
 
+- Le système destiné à Blowdok est en français : installation, menus, notifications, aide et applications ; LIHA répond, explique ses actions et demande les accords en français. La traduction complète du socle Omarchy reste un chantier ouvert et conditionne la validation du poste.
 - Les outils inconnus, arguments inattendus, traversées de chemins et approbations forgées sont rejetés.
 - Le mode complet exécute les actions ordinaires, tandis qu’une commande libre attend toujours une autorisation locale.
 - Un arrêt pendant le raisonnement ou l’attente d’approbation ne lance aucune action supplémentaire.

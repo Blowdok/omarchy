@@ -8,6 +8,8 @@ LIHA 0.1.0 est une extension expérimentale implémentée sur Omarchy quattro, v
 
 Blowdok a demandé d’appliquer les recommandations et d’implémenter directement sans nouvelle question. L’objectif reste son poste de travail personnel, puis une distribution éventuelle. Aucune installation Linux ni modification des disques ou du démarrage Windows n’a été effectuée.
 
+Exigence rappelée explicitement par Blowdok : le système doit être totalement en français, et LIHA doit répondre en français. Cela couvre interfaces, installation, menus, notifications, aide, voix, confirmations et comptes rendus. La consigne commune Codex/Grok a été renforcée ; la traduction complète d’Omarchy n’est pas encore réalisée. Voir le [RAD 0003](decisions/0003-francais-systeme-et-liha.md).
+
 ## Résultat et vérifications
 
 - Extension Quickshell : conversation, bouton dans la barre, accès aux applications, modes approbation/accès complet, activité réelle et arrêt.
@@ -25,6 +27,7 @@ Matériel observé : Intel Core i3-10100, 16 Gio de mémoire, Radeon RX 570, dé
 
 ## Reprise du travail
 
+- Réaliser la francisation complète et l’inclure dans la validation : langue système française générée, menus et panneaux hérités traduits, applications configurées en français. Préserver les commandes techniques, le clavier choisi et le fuseau horaire.
 - Lire le [guide LIHA](../../shell/plugins/liha/README.md), puis terminer les essais natifs dans une session Omarchy compatible avec cette branche.
 - Vérifier ouverture et activation des applications, dictée, lecture, permissions et arrêt de groupes de processus sous Linux.
 - Tester Grok avec un abonnement réellement connecté ; aucun essai Grok authentifié n’a été réalisé.

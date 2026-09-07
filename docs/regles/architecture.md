@@ -10,6 +10,7 @@ La variante personnelle conserve Arch Linux, Hyprland et le bureau Quickshell d�
 - Le modèle propose ; le moteur local valide, demande l’accord requis et exécute.
 - Les actions ordinaires du mode complet restent bornées au catalogue et au dossier choisi ; les commandes libres sont explicitement approuvées.
 - Aucune API payante de secours ; voix locale gratuite, sans prétendre intégrer Vivienne HD.
+- Le français est la langue de l’expérience utilisateur entière et des réponses LIHA ; les textes hérités d’Omarchy restent à traduire. La configuration linguistique doit préserver les identifiants techniques, le clavier et le fuseau choisis.
 
 ## Modules
 
@@ -31,3 +32,4 @@ Le panneau échange avec son processus enfant par stdin/stdout JSON, sans port o
 Toute décision structurante est consignée dans `docs\regles\decisions\` au format RAD.
 
 - [RAD 0002 — Extension conversationnelle LIHA](decisions/0002-liha-extension-conversationnelle.md).
+- [RAD 0003 — Français pour le système et LIHA](decisions/0003-francais-systeme-et-liha.md).

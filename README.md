@@ -10,6 +10,8 @@ Cette variante prépare le poste de travail personnel de Blowdok en ajoutant une
 
 Le cadrage vise l’absence de coût supplémentaire, en conservant les abonnements IA existants et en recherchant des composants vocaux gratuits.
 
+Le français intégral est une exigence de la variante : interface, installation, notifications, aide, voix et réponses LIHA. Le panneau LIHA et sa consigne sont français ; la traduction des écrans et textes hérités d’Omarchy reste à réaliser et à vérifier avant validation du système. Les identifiants techniques imposés par les logiciels conservent leur syntaxe.
+
 Les premières actions concernent les fichiers du projet, les fenêtres Hyprland, le lancement d’applications et les commandes explicitement approuvées. Le contrôle graphique universel, Vivienne HD et une ISO personnalisée ne sont pas encore fournis. Les essais natifs sous Omarchy restent nécessaires avant installation sur le SSD cible.
 
 Sur une session Omarchy compatible avec le système d’extensions de cette branche, activer depuis le clone :
